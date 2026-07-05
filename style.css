@@ -1,0 +1,93 @@
+/* Reset bawaan browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Keseluruhan halaman */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    line-height: 1.6; 
+}       
+
+/* Container biar konten nggak mepet pinggir */
+main, header {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header */
+header { 
+    padding-top: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    color: #888;
+    font-size: 1.1rem
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+    flex-shrink: 0;
+}
+
+/* section */ 
+section {
+    margin-top: 50px;
+}
+
+section h2 {
+    font-size: 1.3rem;
+    color:#a0a0a0;
+}
+
+/* List Skill */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+ul li {
+    background-color: #1e1e1e;
+    color: #7dd3fc;  
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #333
+}
+
+/* Link */
+a { 
+    color: #7dd3fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underlined;
+}

@@ -148,3 +148,27 @@ a {
     transition: color 0.3s ease;
 }
 
+/* Resnponsive - HP */
+@media (max-width: 768px) {
+    header {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    main {
+        padding-top: 20px;
+    }
+}

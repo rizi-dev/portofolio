@@ -13,6 +13,44 @@ body {
     line-height: 1.6; 
 }       
 
+/* Navbar Styling */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 20px;
+    background-color: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+    z-index: 100;
+}
+
+.nav-content {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.nav-links a {
+    color: #888;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+
 /* Container biar konten nggak mepet pinggir */
 main, header {
     max-width: 700px;
@@ -22,7 +60,7 @@ main, header {
 
 /* Header */
 header { 
-    padding-top: 80px;
+    padding-top: 120px;
     padding-bottom: 40px;
     border-bottom: 1px solid #333;
 }
@@ -89,5 +127,24 @@ a {
 }
 
 a:hover {
-    text-decoration: underlined;
+    text-decoration: underline;
 }
+
+/* Hover effect di skill badges */
+ul li { 
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+ul li:hover {
+    background-color: #7dd3fc;
+    color: #0f0f0f;
+    transform: translateY(-2px);
+}
+
+
+/*Hover effect di link */
+a {
+    transition: color 0.3s ease;
+}
+

@@ -50,6 +50,21 @@ nav{
     color: #ffffff;
 }
 
+#theme-toggle {
+    background: none;
+    border: 1px solid #333;
+    color: #e0e0e0;
+    padding: 6 px 12px;
+    border-radius: px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    border-color: #7dd3fc;
+    color: #7dd3fc;
+}
 
 /* Container biar konten nggak mepet pinggir */
 main, header {
@@ -117,13 +132,16 @@ ul li {
     padding: 6px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
-    border: 1px solid #333
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    cursor: default;
 }
 
 /* Link */
 a { 
     color: #7dd3fc;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -131,21 +149,11 @@ a:hover {
 }
 
 /* Hover effect di skill badges */
-ul li { 
-    transition: all 0.3s ease;
-    cursor: default;
-}
 
 ul li:hover {
     background-color: #7dd3fc;
     color: #0f0f0f;
     transform: translateY(-2px);
-}
-
-
-/*Hover effect di link */
-a {
-    transition: color 0.3s ease;
 }
 
 /* Resnponsive - HP */
@@ -171,4 +179,25 @@ a {
     main {
         padding-top: 20px;
     }
+}
+
+/* Light-mode */
+body.light-mode {
+    background: #ffffff;
+    color: #111111;
+}
+
+body.light-mode .header-text h1 {
+    background-color: rgba(255. 255. 255. 0.85);
+    border-bottom-color: #e0e0e0;
+}
+
+body.light-mode .header-text h1 {
+    color: #111111;
+}
+
+body.light-mode ul li {
+    background-color: #f0f0f0;
+    border-color: #ddd;
+    color: #0369a1;
 }
